@@ -10,85 +10,85 @@
   <script src="https://kit.fontawesome.com/839eef82b3.js" crossorigin="anonymous"></script>
   <!-- custom stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-  <title>Fanstroke</title>
+  <title>FanStroke</title>
 </head>
 
 <body>
+
   <header>
-    <div id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
       <div class="container-fluid">
-        <nav class="navbar navbar-dark navbar-expand-md" style="background-color: #070c2b;">
-          <a href="" class="navbar-brand">
-            <img src="images/Logo.png" alt="">Fanstroke
-          </a>
-          <button data-bs-toggle="collapse" data-bs-target="#navbar-toggler" type="button" class="navbar-toggler"><span
-              <i class="fa-solid fa-bars"></i></span></button>
+        <img src="images/site logo.png" alt="">
+        <a class="navbar-brand" href="#">FanStroke</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbar-toggler">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Features</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Roadmap</a>
-              </li>
-              <li>
-                <button type="button" class="btn btn-outline-info nav-button" href="#">App</button>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#roadmap">Roadmap</a>
+            </li>
+            <li>
+              <a href="app.html" target="_blank"><button type="button" class="btn btn-dark nav-button">APP</button></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
-
   <!-- Hero Section 1-->
 
   <div class="hero vh-100 d-flex align-items-center" id="home">
     <div class="container">
-      <div class="row"> 
-        <div class="col-md mx-auto">
-          <h1 class="display-1">Fanstroke</h1>
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <h1 class="display-1">FanStroke</h1>
           <h2>A Decentralized Fantasy Hub</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row lg-2 mx-auto">
+        <div class="col-lg-6 col-img">
+          <img src="images/card.png" alt="">
+        </div>
+        <div class="col-lg-6 ">
+          <h1>About Us</h1>
+          <p class="text-white">FanStroke is a decentralized fantasy gaming platform built on NEAR Protocol, which
+            offers players the ability to join and compete in fantasy sports leagues. Whether you’re a casual player
+            or a hardcore fantasy sports enthusiast, FanStroke has something for everyone. The platform lets anyone
+            participate in various leagues such as Cricket, Football, NBA Rugby, etc, and win prizes.
+          </p>
           <a class="icon-list" href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
           <a class="icon-list" href="#"><i class="fa-brands fa-discord fa-2x"></i></a>
           <a class="icon-list" href="#"><i class="fa-brands fa-medium  fa-2x"></i></a>
           <a class="icon-list" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- About Section -->
-  <section class="row vh-100 bg-black" id="about">
-    <div class="col-lg-6  col-img"></div>
-    <div class="col-lg-6 py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 offset-md-1">
-            <!-- <h6 class="text-primary">About Us</h6> -->
-            <h1>About Us</h1>
-            <p class="text-white">Fanstroke is a Decentralised Application on NEAR aiming to Bring Revolutionize to
-              Prediction & Fantasy Gaming Forever and Ever through Various Games/Pools.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
   <!-- Features section -->
-  <section id="services">
+  <section id="features">
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-8 mx-auto text-center">
-          <!-- <h6 class="text-primary">Features</h6> -->
-          <h1>Features</h1>
+          <h1> FanStroke Market - Phase - I</h1>
         </div>
       </div>
       <div class="row g-4">
@@ -98,10 +98,9 @@
               <img src="images/Feature-1.1.png" alt="">
             </div>
             <hr>
-            <h5 class="mt-4 mb-2">Fanstroke</h5>
+            <h5 class="mt-4 mb-2">FanStroke</h5>
             <h3 class="mt-4 mb-2">Price Prediction</h3>
-            <p>Predict the price of the asset associated with the NEAR blockchain and win rewards by
-              correctly predicting </p>
+            <p>Predict the price of the asset associated with the NEAR blockchain and win rewards.<br> </p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
@@ -110,10 +109,11 @@
               <img src="images/feature1.2.png" alt="">
             </div>
             <hr>
-            <h5 class="mt-4 mb-2">Fanstroke</h5>
+            <h5 class="mt-4 mb-2">FanStroke</h5>
             <h3 class="mt-4 mb-2">No Loss Lottery Pool</h3>
-            <p>Buy tickets(NFTs), which costs of 1 NEAR for each ticket to participate in the pool,
-              Win to get your Fanstroke(FS) tokens.</p>
+            <p>Save money and have a chance to win every week. 
+              <br><br>
+            </p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
@@ -122,11 +122,27 @@
               <img src="images/Feature-1.3.png" alt="">
             </div>
             <hr>
-            <h5 class="mt-4 mb-2">Fanstroke</h5>
-            <h3 class="mt-4 mb-2">Fanstroke Yes or No!</h3>
-            <p>Predict the outcome/answer of a question and get the shared rewards in the form of FS
-              tokens,if lost you'll lose a percentage.</p>
+            <h5 class="mt-4 mb-2">FanStroke</h5>
+            <h3 class="mt-4 mb-2">FanStroke Yes or No!</h3>
+            <p>A prediction platform that allows anyone to predict the outcome of an event by placing bets & win
+              rewards.</p>
           </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-8 mx-auto text-center">
+          <h1> FanStroke Market - Phase - II</h1>
+        </div>
+      </div>
+      <div class="col-lg-12 mx-auto">
+        <div class="service card-effect-4">
+          <div>
+            <img class="iconbox-cricket" src="images/Feature-1.4.png" alt="">
+          </div>
+          <hr>
+          <h5 class="mt-4 mb-2">FanStroke</h5>
+          <h3 class="mt-4 mb-2">Fantasy Sport Game</h3>
+          <p>A fantasy game were you can create imaginary virtual teams and compete with other players</p>
         </div>
       </div>
     </div>
@@ -134,7 +150,7 @@
 
 
   <!-- Roadmap section -->
-  <section class="roadmap-section">
+  <section class="roadmap-section" id="roadmap">
 
     <div class="main2">
       <h3 class="heading">Roadmap</h3>
@@ -169,88 +185,52 @@
   <!-- TEAM -->
   <section id="team">
     <div class="container">
-        <div class="row mb-5">
-            <div class="col-md-8 mx-auto text-center">
-                <!-- <h6 class="text-primary">TEAM</h6> -->
-                <h1>Meet Our Crew Members</h1>
-            </div>
+      <div class="row mb-5">
+        <div class="col-md-8 mx-auto text-center">
+          <h1>Meet Our Crew Members</h1>
         </div>
-        <div class="row text-center g-4">
-            <div class="col-lg-3 col-sm-6">
-                <div class="team-member card-effect">
-                    <img src="images/team/2.jfif" alt="">
-                    <h5 class="mb-0 mt-4">MONISH</h5>
-                    <p></p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
+      </div>
+      <div class="row text-center g-2">
+        <div class="col-lg-6 col-sm-6">
+          <div class="team-member card-effect">
+            <img src="images/team/2.jfif" alt="">
+            <h5 class="mb-0 mt-4">MONISH</h5>
+            <p></p>
+            <div class="social-icons">
+              <a href="https://twitter.com/CryptoMonish?s=20&t=9SX8ba-ML820etx2RzEbQA" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="team-member card-effect">
-                    <img src="images/team/1.jfif" alt="">
-                    <h5 class="mb-0 mt-4">GURU</h5>
-                    <p></p>
-                    <div class="social-icons">
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                      <a href="#"><i class="fa-brands fa-discord"></i></a>
-                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="team-member card-effect">
-                    <img src="images/team/3.jfif" alt="">
-                    <h5 class="mb-0 mt-4">MOHAMED ASLAM</h5>
-                    <p></p>
-                    <div class="social-icons">
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                      <a href="#"><i class="fa-brands fa-discord"></i></a>
-                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="team-member card-effect">
-                    <img src="images/team/4.jpg" alt="">
-                    <h5 class="mb-0 mt-4">SACHIN</h5>
-                    <p></p>
-                    <div class="social-icons">
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                      <a href="#"><i class="fa-brands fa-discord"></i></a>
-                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="team-member card-effect">
+            <img src="images/team/5.jpg" alt="">
+            <h5 class="mb-0 mt-4">GURU</h5>
+            <p></p>
+            <div class="social-icons">
+              <a href="https://twitter.com/NearTrends?s=20&t=9SX8ba-ML820etx2RzEbQA" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<!-- TEAM -->
+  </section>
+  <!-- TEAM -->
   <!-- Footer Section -->
   <footer class="full-footer">
     <div class="container top-footer">
       <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-8">
           <h3>Get Involved</h3>
           <a class="icon-list" href="#"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
           <a class="icon-list" href="#"><i class="fa-brands fa-discord fa-2x"></i></a>
           <a class="icon-list" href="#"><i class="fa-brands fa-medium  fa-2x"></i></a>
           <a class="icon-list" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
         </div>
-        <div class="col-md-2">
-          <h3>Our Services</h3>
-          <a class="foot-right" href="#">About Us</a><br>
-          <a class="foot-right" href="#">Team</a><br>
-          <a class="foot-right" href="#">FAQ</a><br>
-          <a class="foot-right" href="#">Support</a>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid bottom-footer">
-      <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-md-4">
           <p>Fanstroke©2022. All Rights Reserved</p>
         </div>
       </div>
