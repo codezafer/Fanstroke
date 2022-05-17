@@ -1,44 +1,46 @@
 .container-fluid {
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.navbar-brand img {
-	width: 2em;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .nav-item {
 	font-size: 1.1rem;
 	font-weight: 600;
-	margin-left: 2rem;
+	margin-left: 1rem;
 }
 
 .nav-button {
-	margin-left: 2rem;
+	margin-left: 1rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	border-radius: 20px;
+	background-color:#daa520;
 }
 
-.navbar-nav {
-	margin-left: auto;
-	padding-right: 25px;
+.nav-button:hover{
+	background-color:#fff;
+	color: black;
 }
 
-#header {
+
+nav {
 	top: 0;
-	width: 100%;
+	background-color:black;
+}
 
+nav img{
+	height: 2.5rem;
+	border: 2px solid black;
+	border-radius: 20px;
 }
 
 
 /* Hero section */
 .hero {
-	/* background-image: url(../images/hero\ background.png); */
-	background-color: aqua;
-	background-position: center;
+	background-image: url(../images/Landing\ page.png); 
+    background-position: center;
 	background-size: cover;
-	background-attachment: fixed;
+	background-color: black;
 
 }
 
@@ -49,24 +51,26 @@ h4,
 h5,
 h6,
 .display-1 {
-	color: var(--dark);
+	color: white;
 	font-weight: 700;
 
 }
 
 /* about section  */
+#about .col-img {
 
-.col-img {
-	background-image: url(../images/Playing\ Card\ Phone\ Wallpapers.png); 
-	background-size: auto;
-	
 }
-
 h1,
 p .row {
-	margin-top: 200px;
+	margin-top: 8rem;
 }
 
+#about .icon-list{
+color: white;
+}
+#about .icon-list:hover{
+	color: goldenrod;
+	}
 /* features-section */
 section {
 	padding-top: 120px;
@@ -85,6 +89,8 @@ section h1 {
 	padding: 25px;
 	transition: all 0.35s ease;
 	border-radius: 20px;
+	cursor: pointer;
+	font-weight: 600;
 }
 
 .card-effect-2 {
@@ -92,6 +98,8 @@ section h1 {
 	padding: 25px;
 	transition: all 0.35s ease;
 	border-radius: 20px;
+	cursor: pointer;
+	font-weight: 600;
 }
 
 .card-effect-3 {
@@ -99,11 +107,24 @@ section h1 {
 	padding: 25px;
 	transition: all 0.35s ease;
 	border-radius: 20px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.card-effect-4 {
+	background-image: linear-gradient(to bottom, green, whitesmoke);
+	padding: 25px;
+	transition: all 0.35s ease;
+	border-radius: 20px;
+	cursor: pointer;
+	text-align: center;
+font-weight: 600;
 }
 
 .card-effect-1:hover,
 .card-effect-2:hover,
-.card-effect-3:hover {
+.card-effect-3:hover,
+.card-effect-4:hover {
 	box-shadow: none;
 	transform: translateY(-10px);
 }
@@ -118,10 +139,16 @@ section h1 {
 	flex: none;
 }
 
+.card-effect-4 img{
+	height: 250px;
+	display: flex;
+	margin-left: 35%;
+}
 .service img {
 	-webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.5));
 
 }
+
 
 /* Roadmap section */
 
@@ -159,7 +186,7 @@ section h1 {
 .container3 ul::after {
 	position: absolute;
 	content: ' ';
-	width: 2px;
+	width: 5px;
 	height: 100%;
 	background-color: white;
 	left: 51.5%;
@@ -250,19 +277,19 @@ ul li .date {
 
 /*  ----  Media Query Started  ----  */
 
-/* @media screen and (max-width:1224px) {
+@media screen and (max-width:1224px) {
 	.container3{
 		width: 85%;
 	}
 }
 
-@media screen and (max-width:933px) {
+@media screen and (max-width:992px) {
 	.container3{
 		width: 80%;
 		transform: translateX(15px);
 	}
 	.container3 ul::after{
-		left: -30px;
+		left: 2px;
 	}
 	.container3 ul li{
 		width: 100%;
@@ -284,7 +311,7 @@ ul li .date {
 	.container3 ul li:nth-child(even){
 		transform: translateX(0);
 	}
-} */
+}
 
 
 /* Team section */
@@ -296,7 +323,7 @@ ul li .date {
 }
 
 .card-effect {
-	background-color: white;
+	background-color: transparent;
 	padding: 25px;
 	transition: all 0.35s ease;
 	border-radius: 20px;
@@ -337,7 +364,6 @@ ul li .date {
 /* Footer section */
 
 .full-footer {
-	/* background-image: linear-gradient(to right,purple, rgb(248, 120, 141)); */
 	background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
 	width: 100%;
 }
@@ -364,6 +390,11 @@ ul li .date {
 	margin-top: 20px;
 }
 
-.bottom-footer p {
+.top-footer p {
 	color: white;
+	margin-top: 4rem;
 }
+
+
+
+
